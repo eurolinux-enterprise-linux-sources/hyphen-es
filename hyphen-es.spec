@@ -2,7 +2,7 @@ Name: hyphen-es
 Summary: Spanish hyphenation rules
 %define upstreamid 20110222svn
 Version: 0.%{upstreamid}
-Release: 3%{?dist}
+Release: 4%{?dist}
 #svn checkout https://forja.rediris.es/svn/rla-es/separacion
 Source: hyphen-es-0.20110222svn.tar.gz
 Group: Applications/Text
@@ -43,6 +43,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/hyphen/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.20110222svn-4
+- Mass rebuild 2013-12-27
+
 * Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.20110222svn-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
 
